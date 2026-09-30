@@ -1,0 +1,180 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_blank" name="shell-type"><link href="../assets/font-css-e6154908c44c74.css" rel="stylesheet"><link href="../assets/font-css-dfc6ef16b5fab6.css" rel="stylesheet">
+<link href="../assets/font-css-85b88de6c12739.css" rel="stylesheet"><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;background-color:#fbf9f1;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="../assets/tailwind.js"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-dim": "#dcdad2", "error-container": "#ffdad6", "on-primary-container": "#674c00", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#7e2c00", "secondary-fixed-dim": "#c8c6c8", "surface-container-low": "#f6f4ec", "inverse-primary": "#f9bd19", "surface-variant": "#e4e3db", "on-tertiary-fixed": "#370e00", "on-background": "#1b1c17", "secondary-container": "#e1dfe1", "surface-container": "#f0eee6", "surface-container-lowest": "#ffffff", "primary": "#795900", "on-secondary-fixed": "#1b1b1d", "error": "#ba1a1a", "on-secondary-container": "#636264", "background": "#fbf9f1", "on-surface": "#1b1c17", "on-secondary": "#ffffff", "on-tertiary-container": "#8e3200", "surface-container-high": "#eae8e0", "primary-fixed-dim": "#f9bd19", "on-surface-variant": "#4f4633", "surface": "#fbf9f1", "on-secondary-fixed-variant": "#474649", "tertiary": "#a53c00", "inverse-surface": "#30312c", "on-error-container": "#93000a", "secondary": "#5f5e60", "tertiary-fixed-dim": "#ffb598", "primary-fixed": "#ffdf9e", "on-primary-fixed-variant": "#5b4300", "on-tertiary": "#ffffff", "tertiary-fixed": "#ffdbce", "primary-container": "#f5ba13", "tertiary-container": "#ffb192", "outline-variant": "#d3c5ac", "inverse-on-surface": "#f3f1e9", "surface-bright": "#fbf9f1", "on-primary-fixed": "#261a00", "outline": "#817660", "on-error": "#ffffff", "surface-tint": "#795900", "secondary-fixed": "#e4e2e4", "surface-container-highest": "#e4e3db" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-lg": "1.5rem", "margin": "1.25rem", "space-xl": "2rem", "gutter": "1rem", "space-md": "1rem", "space-xs": "0.25rem" }, "fontFamily": { "body-sm": ["Inter"], "body-md": ["Inter"], "headline-md": ["Newsreader"], "label-md": ["Inter"], "headline-sm": ["Inter"], "label-lg": ["Inter"], "headline-lg": ["Newsreader"], "display-lg-mobile": ["Newsreader"], "body-lg": ["Inter"], "title-md": ["Inter"], "label-sm": ["Inter"], "display-lg": ["Newsreader"] }, "fontSize": { "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "headline-md": ["22px", {"lineHeight": "30px", "fontWeight": "600"}], "label-md": ["13px", {"lineHeight": "18px", "fontWeight": "600"}], "headline-sm": ["18px", {"lineHeight": "24px", "fontWeight": "600"}], "label-lg": ["15px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "headline-lg": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "display-lg-mobile": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "title-md": ["16px", {"lineHeight": "22px", "fontWeight": "600"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600"}], "display-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600"}] } } } };</script></head><body data-demo-page="sms_verification_login" class="bg-surface text-on-surface font-body-md text-body-md min-h-screen flex flex-col items-center selection:bg-primary-container selection:text-on-primary-container"><div class="w-full max-w-[390px] min-h-[884px] flex flex-col relative bg-surface"><header class="fixed top-0 max-w-[390px] w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl"><div class="h-11 px-6 flex items-center justify-between text-on-surface select-none"><span class="font-label-lg text-label-lg tracking-tight">9:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[17px] leading-none">signal_cellular_4_bar</span><span class="material-symbols-outlined text-[17px] leading-none">wifi</span><span class="material-symbols-outlined text-[20px] leading-none rotate-90">battery_full</span></div></div></header><main class="flex flex-col flex-1 w-full pt-11 pb-8 px-margin bg-surface"><div class="flex flex-col w-full space-y-3">
+<!-- Guardian Status Strip -->
+<div class="flex items-center justify-between pt-1">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm tracking-wide uppercase">
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">shield</span>
+<span class="">Guardian Authentication</span>
+</div>
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="">Encrypted Channel</span>
+</div>
+</div>
+<!-- Editorial Headline Group -->
+<div class="space-y-1">
+<div class="flex items-baseline justify-between">
+<h1 class="font-display-lg-mobile text-display-lg-mobile text-on-surface tracking-tight">Sign In</h1>
+<button class="font-label-md text-label-md text-primary font-semibold hover:opacity-80 transition-opacity" type="button">
+        Password Login
+      </button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+      Instant safety &amp; rapid mutual response network for elderly loved ones.
+    </p>
+</div>
+<!-- Main Credential Card -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm space-y-3">
+<!-- Phone Field -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold block">Phone Number</label>
+<div class="flex items-center bg-surface-container-low rounded-lg px-3 py-2.5 space-x-2 focus-within:bg-surface-container-lowest transition-all">
+<button class="flex items-center gap-1 text-on-surface font-label-md text-label-md font-semibold pr-1" type="button">
+<span class="">+1</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</button>
+<span class="w-px h-4 bg-surface-variant"></span>
+<input class="w-full bg-transparent text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none" id="phone-input" placeholder="Enter mobile number" type="tel" value="415 892 0184">
+<button class="text-outline hover:text-on-surface p-0.5 rounded-full" id="clear-phone" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+</div>
+<!-- Verification Code Field -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold block">SMS Code</label>
+<div class="flex items-center bg-surface-container-low rounded-lg pl-3 pr-1.5 py-1.5 space-x-2 focus-within:bg-surface-container-lowest transition-all">
+<span class="material-symbols-outlined text-[18px] text-outline">lock_open</span>
+<input class="w-full bg-transparent text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none tracking-wider" id="code-input" maxlength="6" placeholder="Enter 6-digit code" type="text">
+<button class="bg-primary-container hover:bg-primary-fixed-dim text-on-primary-container font-label-sm text-label-sm font-semibold px-3 py-2 rounded-md transition-all active:scale-95 shadow-sm whitespace-nowrap" id="send-code-btn" type="button">
+          Get Code
+        </button>
+</div>
+</div>
+<!-- Legal Terms Checkbox -->
+<label class="flex items-start gap-2.5 cursor-pointer pt-0.5 select-none group">
+<input checked="" class="sr-only" id="terms-toggle" type="checkbox">
+<div class="w-4 h-4 mt-0.5 rounded bg-primary-container flex items-center justify-center text-on-primary-container transition-colors" id="terms-box">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: &quot;wght&quot; 700;">check</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+        I have read and agree to the <a class="text-on-surface font-semibold underline underline-offset-2" href="#">Terms of Service</a> &amp; <a class="text-on-surface font-semibold underline underline-offset-2" href="#">Caregiver Privacy Policy</a>.
+      </p>
+</label>
+<!-- Stacked Action Triggers -->
+<div class="space-y-2 pt-1">
+<button class="w-full bg-primary-container hover:bg-primary-fixed-dim active:scale-[0.99] text-on-primary-container font-label-lg text-label-lg font-bold py-3 px-4 rounded-xl shadow-sm flex items-center justify-center gap-2 transition-transform" type="button">
+<span class="">Log In</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<button class="w-full bg-inverse-surface hover:bg-on-background active:scale-[0.99] text-inverse-on-surface font-label-md text-label-md font-semibold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span class="">Register New Guardian</span>
+</button>
+</div>
+<!-- Troubleshooting Links -->
+<div class="flex items-center justify-between pt-1">
+<a class="font-label-sm text-label-sm text-outline hover:text-on-surface-variant transition-colors" href="#">
+        Need help receiving code?
+      </a>
+<a class="font-label-sm text-label-sm text-outline hover:text-on-surface-variant transition-colors" href="#">
+        Forgot Password?
+      </a>
+</div>
+</div>
+<!-- Sentinel Grid Assurance Pill -->
+<div class="bg-surface-container rounded-xl p-3 flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">cell_tower</span>
+</div>
+<div class="min-w-0 flex-1">
+<p class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Mutual Rescue Network Ready</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">34 nearby volunteers • 6 search grids active</p>
+</div>
+</div>
+<!-- Social Auth & Third Party Identity -->
+<div class="space-y-2 pt-1">
+<div class="relative flex items-center justify-center">
+<div class="w-full h-px bg-surface-variant"></div>
+<span class="absolute px-3 bg-surface text-outline font-label-sm text-label-sm uppercase tracking-wider">
+        Or continue with
+      </span>
+</div>
+<div class="flex items-center justify-center gap-3 pt-1">
+<!-- Apple Auth -->
+<button aria-label="Sign in with Apple" class="w-11 h-11 rounded-full bg-surface-container-lowest text-on-surface shadow-sm flex items-center justify-center hover:bg-surface-container-high active:scale-95 transition-all" type="button">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 170 170">
+<path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.05-7.71-7.85-12.04-14.4-6.42-9.79-11.49-21.2-15.22-34.22-3.72-13.02-5.59-25.29-5.59-36.8 0-14.93 3.69-27.13 11.08-36.6 7.39-9.47 16.64-14.29 27.76-14.47 5.01 0 10.39 1.25 16.14 3.75 5.75 2.51 9.49 3.83 11.22 3.96 1.34-.13 5.3-1.51 11.87-4.14 6.57-2.63 12.09-3.83 16.57-3.6 12.33.66 22.07 5.28 29.23 13.85-10.78 6.53-16.06 15.65-15.84 27.35.22 9.15 3.74 16.89 10.57 23.23 6.83 6.33 14.86 10.15 24.1 11.45-2.07 6.1-4.46 12.18-7.18 18.24zM119.22 33.15c0-7.39 2.68-14.37 8.04-20.93 5.36-6.57 11.88-10.87 19.57-12.92.22 1.34.33 2.57.33 3.69 0 7.38-2.82 14.42-8.47 21.14-5.65 6.72-12.13 10.9-19.47 12.52z"></path>
+</svg>
+</button>
+<!-- Google Auth -->
+<button aria-label="Sign in with Google" class="w-11 h-11 rounded-full bg-surface-container-lowest text-on-surface shadow-sm flex items-center justify-center hover:bg-surface-container-high active:scale-95 transition-all" type="button">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+<path d="M12.24 10.285V13.4h6.887C18.2 15.314 16.63 17.5 12.24 17.5c-3.568 0-6.478-2.91-6.478-6.5s2.91-6.5 6.478-6.5c1.78 0 3.064.69 4.025 1.613l2.42-2.33C17.15 2.348 14.9 1.5 12.24 1.5 6.42 1.5 1.7 6.22 1.7 12.04c0 5.82 4.72 10.54 10.54 10.54 5.2 0 10.02-3.66 10.02-10.295 0-.74-.08-1.46-.22-2.04h-9.8z"></path>
+</svg>
+</button>
+<!-- Community WeChat / SMS Mesh -->
+<button aria-label="Sign in via Caregiver Token" class="w-11 h-11 rounded-full bg-surface-container-lowest text-on-surface shadow-sm flex items-center justify-center hover:bg-surface-container-high active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[20px] text-tertiary">chat_bubble</span>
+</button>
+</div>
+</div>
+<!-- Bottom Guarantee Seal -->
+<div class="pt-2 text-center pb-2">
+<p class="font-label-sm text-label-sm text-outline tracking-tight">
+      Encrypted Caregiver Network • Official Emergency Integration
+    </p>
+</div>
+</div>
+<script>
+  // Dynamic interaction handles for SMS verification state & UX delight
+  (function() {
+    const clearBtn = document.getElementById('clear-phone');
+    const phoneInput = document.getElementById('phone-input');
+    const sendCodeBtn = document.getElementById('send-code-btn');
+    const termsToggle = document.getElementById('terms-toggle');
+    const termsBox = document.getElementById('terms-box');
+
+    if (clearBtn && phoneInput) {
+      clearBtn.addEventListener('click', () => {
+        phoneInput.value = '';
+        phoneInput.focus();
+      });
+    }
+
+    if (sendCodeBtn) {
+      let countdown = 0;
+      let timer = null;
+      sendCodeBtn.addEventListener('click', () => {
+        if (countdown > 0) return;
+        countdown = 60;
+        sendCodeBtn.classList.add('opacity-70');
+        sendCodeBtn.innerText = countdown + 's';
+        timer = setInterval(() => {
+          countdown--;
+          if (countdown <= 0) {
+            clearInterval(timer);
+            sendCodeBtn.classList.remove('opacity-70');
+            sendCodeBtn.innerText = 'Get Code';
+          } else {
+            sendCodeBtn.innerText = countdown + 's';
+          }
+        }, 1000);
+      });
+    }
+
+    if (termsToggle && termsBox) {
+      termsToggle.addEventListener('change', (e) => {
+        if (e.target.checked) {
+          termsBox.className = 'w-4 h-4 mt-0.5 rounded bg-primary-container flex items-center justify-center text-on-primary-container transition-colors';
+          termsBox.innerHTML = '<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: \'wght\' 700;">check</span>';
+        } else {
+          termsBox.className = 'w-4 h-4 mt-0.5 rounded bg-surface-variant flex items-center justify-center transition-colors';
+          termsBox.innerHTML = '';
+        }
+      });
+    }
+  })();
+</script></main><footer class="fixed bottom-0 max-w-[390px] w-full z-50 pointer-events-none pb-safe"><div class="h-6 flex items-center justify-center"><div class="w-32 h-1 bg-on-surface/30 rounded-full"></div></div></footer></div>
+
+<script src="../assets/interactions.js"></script></body></html>

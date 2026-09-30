@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="../assets/font-css-36c6ce078a5964.css" rel="stylesheet"/><link href="../assets/font-css-e6154908c44c74.css" rel="stylesheet"/>
+<link href="../assets/font-css-85b88de6c12739.css" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fbf9f1;}body{overscroll-behavior:none;color:#1b1c17;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="../assets/tailwind.js"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-container": "#674c00", "surface-tint": "#795900", "on-tertiary-container": "#8e3200", "secondary": "#5f5e60", "on-primary": "#ffffff", "on-primary-fixed": "#261a00", "on-primary-fixed-variant": "#5b4300", "inverse-on-surface": "#f3f1e9", "inverse-surface": "#30312c", "on-secondary-container": "#636264", "primary-fixed-dim": "#f9bd19", "secondary-fixed": "#e4e2e4", "on-surface": "#1b1c17", "surface-dim": "#dcdad2", "on-surface-variant": "#4f4633", "on-secondary": "#ffffff", "surface-container-highest": "#e4e3db", "secondary-container": "#e1dfe1", "background": "#fbf9f1", "primary": "#795900", "tertiary-fixed-dim": "#ffb598", "tertiary-fixed": "#ffdbce", "error": "#ba1a1a", "surface-variant": "#e4e3db", "on-tertiary-fixed-variant": "#7e2c00", "inverse-primary": "#f9bd19", "tertiary-container": "#ffb192", "on-error": "#ffffff", "surface": "#fbf9f1", "on-tertiary-fixed": "#370e00", "tertiary": "#a53c00", "on-background": "#1b1c17", "primary-fixed": "#ffdf9e", "surface-container": "#f0eee6", "on-error-container": "#93000a", "surface-container-high": "#eae8e0", "outline": "#817660", "on-secondary-fixed": "#1b1b1d", "secondary-fixed-dim": "#c8c6c8", "on-tertiary": "#ffffff", "outline-variant": "#d3c5ac", "primary-container": "#f5ba13", "surface-bright": "#fbf9f1", "on-secondary-fixed-variant": "#474649", "surface-container-lowest": "#ffffff", "error-container": "#ffdad6", "surface-container-low": "#f6f4ec" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "1rem", "gutter": "1rem", "space-xs": "0.25rem", "margin": "1.25rem", "space-lg": "1.5rem", "space-xl": "2rem", "space-sm": "0.5rem" }, fontFamily: { "body-md": ["Inter"], "label-lg": ["Inter"], "headline-md": ["Newsreader"], "label-sm": ["Inter"], "title-md": ["Inter"], "headline-sm": ["Inter"], "body-sm": ["Inter"], "display-lg-mobile": ["Newsreader"], "label-md": ["Inter"], "display-lg": ["Newsreader"], "body-lg": ["Inter"], "headline-lg": ["Newsreader"] }, fontSize: { "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "600" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body data-demo-page="community_post_creation" class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] -ml-2 flex items-center justify-center text-on-surface active:scale-95 transition-transform" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back_ios_new</span></button><h1 class="font-headline-md text-headline-md tracking-tight text-on-surface">Create Post</h1></div><div class="flex items-center gap-space-sm"><button class="min-w-[44px] min-h-[44px] px-space-xs flex items-center justify-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface active:scale-95 transition-all">Skip</button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe px-margin bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Top Secondary Utility / Action Header Bar -->
+<div class="flex items-center justify-between py-space-sm mb-space-md">
+<button class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-xs -ml-space-xs active:scale-95" onclick="history.back()" type="button">
+      Cancel
+    </button>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">edit_note</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Create Post</h2>
+</div>
+<button class="bg-primary-container text-on-primary-container font-label-lg text-label-lg px-space-md py-2 rounded-full shadow-sm active:scale-95 transition-transform flex items-center gap-1" id="publish-button" type="button">
+<span>Publish</span>
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+<!-- Reassuring Context Warm Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-md shadow-sm flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-on-primary-fixed text-[18px]">volunteer_activism</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Community Care Dispatch</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Your voice connects neighbors, elder guardians, and swift responders in moments that matter.</p>
+</div>
+</div>
+<!-- Category Selector Segment -->
+<div class="mb-space-md">
+<label class="block font-label-md text-label-md text-on-surface-variant mb-space-xs">Post Category</label>
+<div class="grid grid-cols-3 gap-space-xs bg-surface-container-highest p-1 rounded-xl" id="category-segmented-control" role="radiogroup">
+<!-- Missing Help (Active by Default) -->
+<button aria-checked="true" class="cat-pill active flex items-center justify-center gap-1 py-2.5 px-2 rounded-lg bg-surface-container-lowest text-tertiary shadow-sm transition-all font-label-md text-label-md min-w-0" data-cat="missing" role="radio" type="button">
+<span class="material-symbols-outlined text-[17px] shrink-0" style="font-variation-settings: 'FILL' 1;">error</span>
+<span class="truncate">Missing Help</span>
+</button>
+<!-- Safety Guide -->
+<button aria-checked="false" class="cat-pill flex items-center justify-center gap-1 py-2.5 px-2 rounded-lg text-on-surface-variant hover:text-on-surface transition-all font-label-md text-label-md min-w-0" data-cat="guide" role="radio" type="button">
+<span class="material-symbols-outlined text-[17px] shrink-0">health_and_safety</span>
+<span class="truncate">Safety Guide</span>
+</button>
+<!-- Volunteer Activity -->
+<button aria-checked="false" class="cat-pill flex items-center justify-center gap-1 py-2.5 px-2 rounded-lg text-on-surface-variant hover:text-on-surface transition-all font-label-md text-label-md min-w-0" data-cat="volunteer" role="radio" type="button">
+<span class="material-symbols-outlined text-[17px] shrink-0">handshake</span>
+<span class="truncate">Volunteer</span>
+</button>
+</div>
+</div>
+<!-- Content Creation Form -->
+<div class="flex flex-col gap-space-md">
+<!-- Title Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="post-title">Title</label>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm px-space-md py-3 flex items-center">
+<input class="w-full bg-transparent font-title-md text-title-md text-on-surface placeholder:text-outline focus:outline-none" id="post-title" placeholder="Enter title (e.g. Missing Elderly Alert or Safety Tip)" type="text"/>
+</div>
+</div>
+<!-- Body Textarea -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface" for="post-body">Situation &amp; Details</label>
+<span class="font-label-sm text-label-sm text-outline" id="char-count">0 / 500</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col">
+<textarea class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none resize-none" id="post-body" maxlength="500" placeholder="Describe detailed situation, last known location, clothing, or share elderly care experiences..." rows="5"></textarea>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<div class="flex items-center gap-2 text-outline">
+<span class="material-symbols-outlined text-[18px]">format_quote</span>
+<span class="font-body-sm text-body-sm">Include distinctive markers or contacts</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Photo / Image Upload Area -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface">Photos &amp; Identity References</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1 of 4 uploaded</span>
+</div>
+<div class="grid grid-cols-3 gap-space-sm">
+<!-- Uploaded Sample Thumbnail -->
+<div class="relative group aspect-square rounded-xl overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close-up portrait of an Asian elderly grandfather wearing a navy woolen cap and soft brown cardigan smiling warmly outdoors in autumn morning sunlight." src="../assets/image-b0c5d14fda6514.png"/>
+<button aria-label="Remove photo" class="absolute top-1.5 right-1.5 w-6 h-6 rounded-full bg-inverse-surface/85 text-inverse-on-surface flex items-center justify-center shadow-md active:scale-90 transition-transform" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+<div class="absolute bottom-0 inset-x-0 bg-inverse-surface/60 backdrop-blur-xs py-0.5 text-center">
+<span class="font-label-sm text-label-sm text-inverse-on-surface">Primary ID</span>
+</div>
+</div>
+<!-- Add Photo Slot 2 / Upload Trigger -->
+<button class="aspect-square rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col items-center justify-center p-2 text-center shadow-sm active:scale-98 group" type="button">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-1 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[20px]">add_a_photo</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Add photo</span>
+<span class="font-body-sm text-body-sm text-outline">(up to 4)</span>
+</button>
+<!-- Empty Placeholder Visual Guide -->
+<div class="aspect-square rounded-xl bg-surface-container-lowest flex flex-col items-center justify-center p-2 text-center opacity-60">
+<span class="material-symbols-outlined text-outline text-[22px] mb-1">image</span>
+<span class="font-label-sm text-label-sm text-outline">Recent wear</span>
+</div>
+</div>
+</div>
+<!-- Topic Tag Button Row -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface">Topic Tags</label>
+<button class="font-label-sm text-label-sm text-primary flex items-center gap-0.5" type="button">
+<span class="material-symbols-outlined text-[14px]">add</span>
+<span>Custom</span>
+</button>
+</div>
+<div class="flex flex-wrap gap-2" id="tags-container">
+<!-- Tag 1 (Selected) -->
+<button class="tag-item active px-3 py-1.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-md text-label-md flex items-center gap-1 shadow-sm active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">emergency_home</span>
+<span>#UrgentSearch</span>
+</button>
+<!-- Tag 2 (Selected) -->
+<button class="tag-item active px-3 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md flex items-center gap-1 shadow-sm active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[15px]">elderly</span>
+<span>#ElderlyCare</span>
+</button>
+<!-- Tag 3 -->
+<button class="tag-item px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md flex items-center gap-1 shadow-sm active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[15px]">pin_drop</span>
+<span>#ChaoyangDistrict</span>
+</button>
+<!-- Tag 4 -->
+<button class="tag-item px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md flex items-center gap-1 shadow-sm active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[15px]">medical_services</span>
+<span>#DementiaSupport</span>
+</button>
+</div>
+</div>
+<!-- Geolocation Attachment Pill with Toggle -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0 pr-2">
+<div class="w-10 h-10 rounded-full bg-primary-fixed-dim text-on-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-title-md text-title-md text-on-surface truncate">Attach Current Location</span>
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-[10px] font-label-sm text-outline font-semibold">GPS</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Chaoyang Park Greenbelt, South Gate</span>
+</div>
+</div>
+<!-- iOS Style Toggle -->
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" id="location-toggle" type="checkbox"/>
+<div class="w-12 h-7 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Community Guardian Sync Information Card -->
+<div class="bg-tertiary-fixed/40 rounded-xl p-space-md shadow-sm flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">sensors</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-tertiary-container">Automated Guardian Beacon Active</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          Missing alert submissions automatically synchronize with verified local guardians, patrol volunteers, and community search beacons within a 3km radius.
+        </p>
+</div>
+</div>
+</div>
+<!-- Tactile Interactive Script -->
+<script>
+    (function() {
+      // Category segmented switcher
+      const catButtons = document.querySelectorAll('#category-segmented-control .cat-pill');
+      catButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          catButtons.forEach(b => {
+            b.setAttribute('aria-checked', 'false');
+            b.classList.remove('bg-surface-container-lowest', 'text-tertiary', 'shadow-sm');
+            b.classList.add('text-on-surface-variant');
+          });
+          btn.setAttribute('aria-checked', 'true');
+          btn.classList.add('bg-surface-container-lowest', 'text-tertiary', 'shadow-sm');
+          btn.classList.remove('text-on-surface-variant');
+        });
+      });
+
+      // Interactive topic tags toggle
+      const tagButtons = document.querySelectorAll('#tags-container .tag-item');
+      tagButtons.forEach(tag => {
+        tag.addEventListener('click', () => {
+          if (tag.classList.contains('bg-surface-container-lowest')) {
+            tag.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+            tag.classList.add('bg-primary-fixed', 'text-on-primary-fixed');
+          } else {
+            tag.classList.remove('bg-primary-fixed', 'text-on-primary-fixed', 'bg-tertiary-container', 'text-on-tertiary-container');
+            tag.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+          }
+        });
+      });
+
+      // Textarea live character counter
+      const textarea = document.getElementById('post-body');
+      const counter = document.getElementById('char-count');
+      if (textarea && counter) {
+        textarea.addEventListener('input', (e) => {
+          counter.textContent = `${e.target.value.length} / 500`;
+        });
+      }
+
+      // Publish button simulated feedback
+      const publishBtn = document.getElementById('publish-button');
+      if (publishBtn) {
+        publishBtn.addEventListener('click', () => {
+          publishBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[16px]">progress_activity</span><span>Syncing...</span>';
+          setTimeout(() => {
+            publishBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check_circle</span><span>Posted</span>';
+            publishBtn.classList.remove('bg-primary-container', 'text-on-primary-container');
+            publishBtn.classList.add('bg-primary', 'text-on-primary');
+          }, 800);
+        });
+      }
+    })();
+  </script>
+</div></main><script src="../assets/interactions.js"></script></body></html>
