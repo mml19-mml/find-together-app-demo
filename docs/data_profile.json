@@ -1,0 +1,18 @@
+{
+  "rows": 10080,
+  "columns": [
+    "timestamp",
+    "lat",
+    "lon"
+  ],
+  "start": "2025-10-20 00:00:00",
+  "end": "2025-10-26 23:59:00",
+  "intervals_seconds": {
+    "60.0": 10079
+  },
+  "duplicate_timestamps": 0,
+  "null_cells": 0,
+  "quality_rejected_by_reference_pipeline": 0,
+  "complete_windows": 10071,
+  "trained_model": false
+}

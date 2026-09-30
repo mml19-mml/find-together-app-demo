@@ -1,0 +1,4 @@
+# Optional AI environment. Reference range only; training not executed in this delivery.
+numpy>=1.26,<3
+tensorflow>=2.16,<3
+tzdata>=2024.1
